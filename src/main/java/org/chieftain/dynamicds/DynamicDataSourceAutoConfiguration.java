@@ -94,7 +94,6 @@ public class DynamicDataSourceAutoConfiguration {
 
     @Bean(name = "txManager")
     @ConditionalOnMissingBean(name = {"txManager"})
-    @ConditionalOnProperty(prefix = "dbconfig.hikariconfig", name = "enable", havingValue = "true")
     @DependsOn("dynamicDataSource")
     public DataSourceTransactionManager txManager (@Qualifier("dynamicDataSource") DataSource dynamicDataSource) {
         DataSourceTransactionManager transactionManager = new DataSourceTransactionManager();
