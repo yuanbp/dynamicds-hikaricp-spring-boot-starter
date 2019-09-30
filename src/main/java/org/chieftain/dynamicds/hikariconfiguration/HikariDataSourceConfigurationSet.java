@@ -14,7 +14,6 @@ import java.util.List;
 @Data
 @Component
 @ConfigurationProperties(prefix = "dbconfig.hikariconfig")
-//@ConditionalOnProperty(value = "dbconfig.hikariconfig", name = "enable", havingValue = "true")
 public class HikariDataSourceConfigurationSet {
 
     public static final String DEFAULT_KEY = "master";
