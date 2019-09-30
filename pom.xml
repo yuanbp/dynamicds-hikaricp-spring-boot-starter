@@ -4,7 +4,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>org.chieftain</groupId>
     <artifactId>dynamicds-hikaricp-spring-boot-starter</artifactId>
-    <version>1.3.2</version>
+    <version>1.3.3</version>
     <name>dynamicds-spring-boot-starter</name>
     <description>dynamic datasource springboot starter</description>
 
