@@ -36,6 +36,7 @@ public class DynamicDataSourceAspect {
         String value = dataSource.value();
         if (dataSourceKeys.isEmpty()) {
             DynamicDataSourceKey.setDataSourceKey(HikariDataSourceConfigurationSet.DEFAULT_KEY);
+            return;
         }
         if (dataSourceKeys.contains(value)) {
             DynamicDataSourceKey.setDataSourceKey(value);
